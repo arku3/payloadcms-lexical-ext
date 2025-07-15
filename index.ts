@@ -9,14 +9,6 @@ export { default as HTMLConverters } from './src/color/converters/html';
 import ColorJSXConverters from './src/color/converters/jsx';
 import EmbedJSXConverters from './src/embed/converters/jsx';
 
-export const JSXConverters = {
-	...ColorJSXConverters,
-	...EmbedJSXConverters,
-};
+export const JSXConverters = { ...ColorJSXConverters, ...EmbedJSXConverters };
 
-export type {
-	ColorFeatureProps,
-	Color,
-	SerializedCustomParagraphNode,
-	SerializedCustomHeadingNode,
-} from './src/color/types';
+export type { ColorFeatureProps, Color } from './src/color/types';

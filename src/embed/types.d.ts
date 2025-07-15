@@ -1,11 +1,6 @@
-import { Spread } from '@payloadcms/richtext-lexical';
-import { SerializedDecoratorBlockNode } from "@payloadcms/richtext-lexical/lexical/react/LexicalDecoratorBlockNode";
+import type { Spread } from '@payloadcms/richtext-lexical';
+import type { SerializedDecoratorBlockNode } from '@payloadcms/richtext-lexical/lexical/react/LexicalDecoratorBlockNode';
 
-export type EmbedComponentProps = Readonly<{
-	id: string;
-	className?: string;
-}>;
+export type EmbedComponentProps = Readonly<{ id: string; className?: string }>;
 
-export type SerializedEmbedNode = Spread<{
-	id: string;
-}, SerializedDecoratorBlockNode>;
+export type SerializedEmbedNode = Spread<{ id: string }, SerializedDecoratorBlockNode>;
