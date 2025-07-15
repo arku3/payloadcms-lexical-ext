@@ -11,7 +11,12 @@ import EmbedJSXConverters from './src/embed/converters/jsx';
 
 export const JSXConverters = {
 	...ColorJSXConverters,
-	...EmbedJSXConverters
-}
+	...EmbedJSXConverters,
+};
 
-export type { ColorFeatureProps, Color } from './src/color/types';
+export type {
+	ColorFeatureProps,
+	Color,
+	SerializedCustomParagraphNode,
+	SerializedCustomHeadingNode,
+} from './src/color/types';
